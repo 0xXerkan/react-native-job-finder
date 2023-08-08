@@ -9,9 +9,13 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+%ProgramData%
 
 # macOS
 .DS_Store
+
+# ENV
+.env
 
 # MISC
 notes.txt
