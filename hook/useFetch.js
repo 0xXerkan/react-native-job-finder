@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-// import { RAPID_API_KEY } from '@env';
+import { RAPID_API_KEY } from '@env';
 
 import { mockData } from "../constants/mockData";
 
@@ -11,8 +11,6 @@ const useFetch = (endpoint, query) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [useMockData, setUseMockData] = useState(false);
-
-  const RAPID_API_KEY = '387aeb8b2emshd7206ea289e6e7ap19c4ebjsn092268ed9f2a';
 
   const options = {
     method: 'GET',

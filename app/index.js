@@ -45,8 +45,8 @@ const Home = () => {
             }}
           />
 
-          <Popularjobs data={data.slice(0,10)} isloading={isLoading} error={error} />
-          <Nearbyjobs data={data.slice(10)} isloading={isLoading} error={error} />
+          <Popularjobs data={data.slice(0,10)} isLoading={isLoading} error={error} />
+          <Nearbyjobs data={data.slice(10)} isLoading={isLoading} error={error} />
 
         </View>
 

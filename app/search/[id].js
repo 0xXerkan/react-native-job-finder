@@ -8,7 +8,7 @@ import { ScreenHeaderBtn, NearbyJobCard } from '../../components'
 import { COLORS, icons, SIZES } from '../../constants'
 import styles from '../../styles/search'
 
-// import { RAPID_API_KEY } from '@env';
+import { RAPID_API_KEY } from '@env';
 
 const JobSearch = () => {
     const params = useSearchParams();
@@ -19,7 +19,6 @@ const JobSearch = () => {
     const [searchError, setSearchError] = useState(null);
     const [page, setPage] = useState(1);
 
-    const RAPID_API_KEY = '387aeb8b2emshd7206ea289e6e7ap19c4ebjsn092268ed9f2a';
 
     const handleSearch = async () => {
         setSearchLoader(true);
